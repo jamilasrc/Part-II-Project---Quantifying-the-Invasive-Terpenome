@@ -202,7 +202,7 @@ overall_sample = c(1970:2020)
       data_to_use_2 = uniq_datasets[which(means_dataset <= 75)]
       species_2 = country_year_range$species[which(country_year_range$datasetKey %in% data_to_use_2)] # creates a vector of species from datasets where the mean distance from the emission profile site <=75km
       unique_species2 = unique(species_2)
-      species_richness_2 = length(unique_species2)
+      species_richness_2 = length(unique_species2) 
       richness_table[data_p,7] = species_richness_2
       
       
